@@ -9,6 +9,8 @@ add-type @"
         }
     }
 "@
+$TLSProtocols = [System.Net.SecurityProtocolType]'Tls,Tls11,Tls12'
+[System.Net.ServicePointManager]::SecurityProtocol = $TLSProtocols
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
 
 $ArcTargets = New-Object System.Collections.Generic.List[Object]
