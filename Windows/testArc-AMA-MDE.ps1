@@ -1,3 +1,13 @@
+# A basic script to check endpoint connectivity for Azure Arc, Azure Monitor Agent, and Microsoft Defender for Endpoint
+# Heavily based on the equivalent Bash/curl script for Linux
+#
+# Version 1.0 14/12/2023 - tested using my own tenancy endpoints, so that MS docs requiring
+#                          "allow *.subdomain.microsoft.com" actually have useful targets
+#
+# Note that as of 13/12/2023, azgnsaustraliaeast.australiaeast.cloudapp.azure.com is tested even though it doesn't resolve
+# which looks like a misconfig in MS CNAMEs for one of their services
+# So this will show as problematic, but it's not actually a connectivity issue
+
 add-type @"
     using System.Net;
     using System.Security.Cryptography.X509Certificates;
