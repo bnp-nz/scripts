@@ -102,7 +102,7 @@ $PKIetcResults = New-Object System.Collections.Generic.List[Object]
 Write-Output("** TESTING URLs for Azure Arc **")
 $ArcTargets | ForEach-Object {
 [URI]$target = $_
-$req = [system.Net.WebRequest]::Create($target)
+$req = [System.Net.WebRequest]::Create($target)
 $req.method = "HEAD"
 
 try {
@@ -127,7 +127,7 @@ Write-Output("")
 Write-Output("** TESTING URLs for Azure Monitor Agent **")
 $AMATargets | ForEach-Object {
 [URI]$target = $_
-$req = [system.Net.WebRequest]::Create($target)
+$req = [System.Net.WebRequest]::Create($target)
 $req.method = "HEAD"
 
 try {
@@ -152,7 +152,7 @@ Write-Output("")
 Write-Output("** TESTING URLs for Defender for Endpoint **")
 $MDETargets | ForEach-Object {
 [URI]$target = $_
-$req = [system.Net.WebRequest]::Create($target)
+$req = [System.Net.WebRequest]::Create($target)
 $req.method = "HEAD"
 
 try {
@@ -177,7 +177,7 @@ Write-Output("")
 Write-Output("** TESTING URLs for PKI etc **")
 $PKIetcTargets | ForEach-Object {
 [URI]$target = $_
-$req = [system.Net.WebRequest]::Create($target)
+$req = [System.Net.WebRequest]::Create($target)
 $req.method = "HEAD"
 
 try {
