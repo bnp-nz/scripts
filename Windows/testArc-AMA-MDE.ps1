@@ -64,6 +64,7 @@ $ArcTargets.Add("https://packages.microsoft.com")
 $ArcTargets.Add("https://pas.windows.net")
 $ArcTargets.Add("https://umsaqql1kvls4mgpd5r3.blob.core.windows.net")
 $ArcTargets.Add("https://www.tm.f.prd.aadg.trafficmanager.net")
+$ArcTargets.Add("https://www.tm.ak.prd.aadg.trafficmanager.net")
 $ArcResults = New-Object System.Collections.Generic.List[Object]
 
 $AMATargets = New-Object System.Collections.Generic.List[Object]
